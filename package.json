@@ -1,0 +1,46 @@
+{
+  "name": "n8n-nodes-rocket-chat",
+  "version": "0.2.0",
+  "description": "Community node for Rocket.Chat (send, files, webhook/polling/realtime receive)",
+  "keywords": [
+    "n8n-community-node",
+    "rocketchat",
+    "chat"
+  ],
+  "license": "MIT",
+  "author": "Brian Tafoya & ChatGPT",
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/n8n-nodes-rocket-chat.git"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "lint": "echo \"(add eslint if you want)\""
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/request": "^2.48.13",
+    "@types/ws": "^8.5.10",
+    "n8n-core": "^1.14.1",
+    "n8n-workflow": "^1.82.0",
+    "request": "^2.88.2",
+    "typescript": "^5.4.5"
+  },
+  "n8n": {
+    "credentials": [
+      "dist/credentials/RocketChatPat.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/RocketChatMessage.node.js",
+      "dist/nodes/RocketChatFile.node.js",
+      "dist/nodes/RocketChatTrigger.node.js"
+    ]
+  }
+}

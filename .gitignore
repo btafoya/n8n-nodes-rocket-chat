@@ -1,6 +1,4 @@
 /CLAUDE.md
-/credentials
-/nodes
-/package.json
-/transport
-/tsconfig.json
+/package-lock.json
+/.claude
+node_modules
