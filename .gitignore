@@ -2,3 +2,4 @@
 /package-lock.json
 /.claude
 node_modules
+.serena/project.yml
