@@ -3,3 +3,4 @@
 /.claude
 node_modules
 .serena/project.yml
+.mcp.json
