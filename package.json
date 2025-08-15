@@ -11,16 +11,22 @@
   "author": "Brian Tafoya & ChatGPT",
   "repository": {
     "type": "git",
-    "url": "https://example.com/n8n-nodes-rocket-chat.git"
+    "url": "https://github.com/btafoya/n8n-nodes-rocket-chat.git"
+  },
+  "homepage": "https://github.com/btafoya/n8n-nodes-rocket-chat#readme",
+  "bugs": {
+    "url": "https://github.com/btafoya/n8n-nodes-rocket-chat/issues"
   },
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
-    "lint": "echo \"(add eslint if you want)\""
+    "lint": "echo \"(add eslint if you want)\"",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "ws": "^8.18.0"
